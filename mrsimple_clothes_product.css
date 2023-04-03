@@ -1,0 +1,193 @@
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+.mrsimple {
+
+}
+.headmrsimple {
+    height: 60px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headmrsimple > a {
+    text-decoration: none;
+}
+.headmrsimple-name {
+    color: white;
+}
+.headmrsimple-name:hover {
+    cursor: pointer;
+}
+.headmrsimple-find {
+    display: flex;
+    justify-content: flex-start;
+}
+.headmrsimple-find-1 i:hover {
+    cursor: pointer;
+}
+.headmrsimple-find-2 {
+    background-color: brown;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+}
+::placeholder {
+    color: white;
+}
+.headmrsimple-right {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headmrsimple-option{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.headmrsimple-option > select{
+    background-color: brown;
+    border: none;
+    color: white;
+    outline: none;
+}
+.headmrsimple-option > select > option {
+    background-color: white;
+    color: black;
+}
+.headmrsimple-login {
+    color: white;
+}
+.headmrsimple-login:hover {
+    cursor: pointer;
+    color: yellow;
+}
+.headmrsimple-contact {
+    color: white;
+}
+.headmrsimple-contact:hover {
+    cursor: pointer;
+    color: yellow;
+}
+.headmrsimple-icon > i:hover {
+    color: yellow;
+    cursor: pointer;
+}
+.bodymrsimple {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mrsimple-product {
+    width: 33.33%;
+}
+.mrsimple-product:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.mrsimple-photo {
+    display: flex;
+    position: relative;
+    margin: 10%;
+}
+.mrsimple-photo1 {
+    width: 100%;
+}
+.mrsimple-photo1:hover{
+    cursor: pointer;
+}
+.icon1 {
+    position: absolute;
+    right: 10px;
+}
+.icon1:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+.icon2 {
+    position: absolute;
+    background-color: rgb(204, 223, 167);
+}
+.mrsimple-info {
+    text-align: center;
+}
+.name:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+.mrsimple-info > p > del {
+    color: gray;
+    font-style: oblique;
+    font-size: 15px;
+}
+.footmrsimple {
+    display: none;
+}
+.footmrsimple-name {
+    text-align: center;
+}
+.footmrsimple-name:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+.footmrsimple-input {
+    background-color: grey;
+}
+.footmrsimple-input-value {
+    font-size: 15px;
+    color: white;
+}
+.footmrsimple-input > div > input {
+    font-size: 15px;
+    outline: none;
+}
+.footmrsimple-add {
+    display: flex;
+    justify-content: start;
+}
+.footmrsimple-add > button {
+    font-size: 12px;
+    background-color: rgba(150, 120, 120, 0.89);
+    color: white;
+    border: 1px;
+    outline: none;
+    padding: 10px;
+}
+.footmrsimple-add > button:hover {
+    cursor: pointer;
+}
+.btn-editClothes-save {
+    display: none;
+}
+.btn-editClothes-cancle {
+    display: none;
+}
+.footmrsimple-invoice {
+    text-align: center;
+    margin-top: 20px;
+}
+.footmrsimple-invoice > table > thead > tr > th {
+    padding: 15px;
+}
+.footmrsimple-invoice > table > tbody > tr > td {
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+}
+.footmrsimple-invoice > table > tbody > tr:hover {
+    background-color: rgb(204, 199, 199);
+}
+.footmrsimple-invoice > table > tbody > tr > td > i:hover {
+    color: red;
+    cursor: pointer;
+}
+.footmrsimple-total {
+    background-color: rgb(122, 121, 121);
+    text-align: right;
+    color: white;
+}

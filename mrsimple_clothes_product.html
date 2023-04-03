@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRSIMPLE</title>
+    <link rel="icon" href="https://mrsimple.vn/img/favicon.jpg?time=1680331104">
+    <link rel="stylesheet" href="mrsimple_clothes_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="mrsimple">
+        <div class="headmrsimple">
+            <a href="mrsimple_clothes.html">
+                <h1 class="headmrsimple-name">MRSIMPLE</h1>
+            </a>
+            <div class="headmrsimple-right">
+                <form class="headmrsimple-find" action="">
+                    <div class="headmrsimple-find-1">
+                        <input class="headmrsimple-find-2" placeholder="Tìm kiếm..." type="text">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="headmrsimple-option">
+                    <select name="" id="">
+                        <option value="Tiếng Việt">TIẾNG VIỆT</option>
+                        <option value="English">ENGLISH</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="Tải">TẢI ỨNG DỤNG</option>
+                        <option value="appstore">APP STORE</option>
+                        <option value="googleplay">GOOGLE PLAY</option>
+                    </select>
+                    <label class="headmrsimple-login" for="">ĐĂNG NHẬP</label>
+                    <label class="headmrsimple-contact" for="">LIÊN HỆ</label>
+                    <div class="headmrsimple-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodymrsimple">
+            <!-- <div class="mrsimple-product">
+                <div class="mrsimple-photo">
+                    <img class="mrsimple-photo1" src="source/1920x2880YDQwNuO2m4N4sV91dJcVenNlaxGuxY1ZPLL5A46L.jpeg" alt="">
+                    <span class="icon1"><i class="fa-regular fa-heart"></i></span>
+                    <span class="icon2">-20%</span>
+                </div>
+                <div class="mrsimple-info">
+                    <p class="name">TÚI HỘP ĐEO CHÉO DA XÁM | + 2 MÀU</p>
+                    <P>1279200Đ</P>
+                    <p><del>1599000Đ</del></p>
+                </div>
+            </div> -->
+        </div>
+        <div class="footmrsimple-name">
+            <b ondblclick="hideForm()" onclick="showForm()">TẠO GIỎ HÀNG</b>
+        </div>
+        <hr>
+        <div class="footmrsimple">
+            <div class="footmrsimple-input">
+                <div>
+                    <label class="footmrsimple-input-value" for="clothesName">NHẬP TÊN HÀNG</label>
+                    <input id="item" type="text">
+                    <input type="hidden" id="invoiceId" value="0">
+                </div>
+                <div>
+                    <label class="footmrsimple-input-value" for="quantity">NHẬP SỐ LƯỢNG</label>
+                    <input id="quantity" type="number">
+                </div>
+                <div>
+                    <label class="footmrsimple-input-value" for="price">NHẬP GIÁ</label>
+                    <input id="price" type="number">
+                </div>
+                <div class="footmrsimple-add">
+                    <button class="btn-addClothes" onclick="addClothes()">ADD TO CARD</button>
+                    <button class="btn-resetClothes" onclick="resetClothes()">RESET</button>
+                    <button class="btn-editClothes-save" onclick="saveEdit()">SAVE</button>
+                    <button class="btn-editClothes-cancle" onclick="cancleEdit()">CANCLE</button>
+                </div>
+            </div>
+            <div class="footmrsimple-invoice">
+                <table class="table-invoice">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>SẢN PHẨM</th>
+                            <th>SỐ LƯỢNG</th>
+                            <th>ĐƠN GIÁ</th>
+                            <th>GIÁ TIỀN</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body-invoice">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>TÚI HỘP ĐEO CHÉO DA XÁM | + 2 MÀU</td>
+                            <td>1</td>
+                            <td>1279200Đ</td>
+                            <td>1279200Đ</td>
+                            <td>
+                                <i onclick="editInvoice()" class="fa-solid fa-pen"></i>
+                                <i onclick="deleteInvoice()" class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr> -->
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>TÚI HỘP ĐEO CHÉO DA XÁM | + 2 MÀU</td>
+                            <td>1</td>
+                            <td>1279200Đ</td>
+                            <td>1279200Đ</td>
+                            <td>
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>TÚI HỘP ĐEO CHÉO DA XÁM | + 2 MÀU</td>
+                            <td>1</td>
+                            <td>1279200Đ</td>
+                            <td>1279200Đ</td>
+                            <td>
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                    <tfoot class="footmrsimple-total">
+                        <tr>
+                            <th colspan="4">TOTAL</th>
+                            <th id="total"></th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="mrsimple_clothes_product.js"></script>    
+</body>
+
+</html>
